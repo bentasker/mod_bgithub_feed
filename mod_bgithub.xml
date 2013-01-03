@@ -12,8 +12,7 @@
 	<authorUrl>bentasker.co.uk</authorUrl>
 	<version>1.0</version>
 	<description>A simple module to GitHub activity for a given repo</description>
-	<!-- Runs on install/uninstall/update; New in 1.6 -->
-	<!--<scriptfile>script.php</scriptfile>-->
+	
 	<files>
 		<filename module="mod_bgithub">mod_bgithub.php</filename>
 		<filename>mod_bgithub.xml</filename>

@@ -1,7 +1,7 @@
 <?php
 /**
- * @subpackage	mod_btwitter
- * @copyright	Copyright (C) 2012 Ben Tasker . All rights reserved.
+ * @subpackage	mod_bgithub
+ * @copyright	Copyright (C) 2013 Ben Tasker . All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
