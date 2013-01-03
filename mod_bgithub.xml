@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>BGitHub</name>
+	<author>Ben Tasker</author>
+	<creationDate>January 2013</creationDate>
+	<license>GNU General Public License version 2</license>
+	<authorEmail>BGithub@bentasker.co.uk</authorEmail>
+	<authorUrl>bentasker.co.uk</authorUrl>
+	<version>1.0</version>
+	<description>A simple module to GitHub activity for a given repo</description>
+	<!-- Runs on install/uninstall/update; New in 1.6 -->
+	<!--<scriptfile>script.php</scriptfile>-->
+	<files>
+		<filename module="mod_bgithub">mod_bgithub.php</filename>
+		<filename>mod_bgithub.xml</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<filename>helper.php</filename>
+		
+		<filename>index.html</filename>				
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			  
+			  
+			  
+				  <field name='layout'
+					type='modulelayout'
+					default='Commit'
+					size='10'
+					label='Module Mode'
+					  />
+			  
+			  
+			  
+			  
+			  
+				<field type="list"
+				      name="Style"
+				      default="light"
+				      label="Style"
+				      description="Color Scheme to Use">
+				      
+				      <option value="light">Light</option>
+				      <option value="dark">Dark</option>
+				      
+				    </field>
+				    
+				    <field
+					name="Owner"
+					type="text"
+					default="BenTasker"
+					size="10"
+					label="Repo Owner"
+					description="Enter the GitHub Username for the repository owner" />
+					
+					
+					<field
+					name="repo"
+					type="text"
+					default="PHPCredLocker"
+					size="10"
+					label="Repo"
+					description="Enter the Repository Name" />
+					
+					
+					<field type="list"
+				      name="CommitImg"
+				      default="0"
+				      label="Display Gravatar"
+				      description="Display User's Gravatar next to each commit/issue?">
+				      
+				      <option value="0">No</option>
+				      <option value="1">Yes</option>
+				
+				</field>
+					
+					
+					
+						
+					
+				
+				<field type="list"
+				      name="DispCommitter"
+				      default="1"
+				      label="Display Username"
+				      description="Display the user name of the committer or issue creator?">
+				      
+				      <option value="0">No</option>
+				      <option value="1">Yes</option>
+				
+				</field>
+					
+					
+				      
+				      <field
+					name="DispRecords"
+					type="text"
+					default="5"
+					size="10"
+					label="# Records"
+					description="Number of Entries to Display for commits/issues" />
+				
+			      </fieldset>
+			      
+			      <fieldset name="Commits" label="Commits">
+				
+					
+					
+					<field
+					name="Branch"
+					type="text"
+					default="master"
+					size="10"
+					label="Branch"
+					description="Branch to retrieve commits for" />
+					
+					
+					
+					
+					
+					
+					
+				
+				</fieldset>
+				
+				<fieldset name="Issues" label="Issues">
+				  
+				  <field name="IssueLabels"
+					type="text"
+					default=""
+					size="10"
+					label="Displayed Labels"
+					description="Enter a comma seperated list of labels to display (i.e. Bug, enhancement etc) or leave blank to show all" />
+				  
+				  <field type="list"
+				      name="IssueStatus"
+				      default="0"
+				      label="Issue Status"
+				      description="Filter output by issue status">
+				      
+				
+				      <option value="Open">Open</option>
+				      <option value="Closed">Closed</option>
+				    </field>
+				
+				    
+				    <field type="list"
+					  name="IssueSort"
+					  default="updated"
+					  label="Sort By"
+					  description="Sort issues by"
+					    >
+					    
+					      <option value="created">Creation Date</option>
+					      <option value="updated">Date of last update</option>
+					      <option value="comments">Date of last comment</option>
+				    </field>
+				    
+				    
+				    
+				    
+					    
+				    
+				    <field type="list"
+					  name="IssueOrder"
+					  default='desc'
+					  label='Sorting Order'
+					    description='Order to sort displayed issues in'>
+					    
+					      <option value="desc">Descending</option>
+					      <option value="asc">Ascending</option>
+					      
+					    </field>
+					    
+					    
+					    
+					    
+				    
+				    
+				  
+				</fieldset>
+				
+				
+				<fieldset name="User" label="User">
+				  
+				  
+				<field
+					name="JoinedDate"
+					type="text"
+					default="d M Y"
+					size="10"
+					label="Date Format"
+					description="The format to display signup dates in" />
+					
+		  
+				  
+				</fieldset>
+				
+				
+				<fieldset name="formatting" label="Formatting">
+				  
+				  
+				  	<field
+					name="ClssSuffix"
+					type="text"
+					default=""
+					size="10"
+					label="Module Class Suffix"
+					description="An additional suffix to add to the module class" />
+					
+				
+				<field
+					name="DivSize"
+					type="text"
+					default="0"
+					size="10"
+					label="Div Width"
+					description="Width in pixels of the div. Set to 0 to let the browser decide" />
+				
+				
+				<field
+					name="DateFormat"
+					type="text"
+					default="d M H:i"
+					size="10"
+					label="Date Format"
+					description="The format to display times/dates in" />
+					
+		
+			
+
+					
+			</fieldset>
+			
+			
+								
+				
+				<fieldset
+				name="Caching"
+				label="Caching"
+				description="mod_bGitHub uses caching to avoid slow page load times."
+				>
+				
+				
+				<field type="list"
+				      name="CachingEnabled"
+				      default="1"
+				      label="Use Cache"
+				      description="Cache results? Selecting No may slow your page load times">
+				      
+				      <option value="0">No</option>
+				      <option value="1">Yes</option>
+				
+				</field>
+				
+				
+				
+				
+				
+				<field
+					name="shortcache"
+					type="text"
+					default="30"
+					size="10"
+					label="Cache Time"
+					description="Enter a cache time in minutes" />
+					
+					
+				
+				
+				</fieldset>
+
+		</fields>
+	</config>
+</extension>

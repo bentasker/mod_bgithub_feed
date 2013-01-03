@@ -1,0 +1,26 @@
+.modBGitHubWrap { border: none; padding: 10px; font-size: small;}
+.CommitWrapper {border: 1px solid #ffffff; border-radius: 5px; box-shadow: 3px 3px 4px #ffffff; padding: 5px;}
+.commit { list-style: none; padding: 10px;}
+.commit:hover { list-style: none; background: #ffffff; color: #000000; padding: 10px; border-radius: 5px;}
+.indCommitwrap {position: relative; margin-bottom: 5px;}
+
+.commitGrav {display: inline-block; float: left; }
+.bGitHubGravatar {height: 40px; width: 40px;}
+.commitcontent {display: inline-block; padding-left: 5px;}
+.committext {display: inline-block;}
+.commitAuthor {text-decoration: none;}
+.CommitDate {font-style: italic; font-size: x-small;}
+.commitPos {display: inline-block; float: right; text-align: center;}
+.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; background-color: #F9F9F9; opacity: 0.9;}
+.commitButton:hover { background-color: grey; opacity: 1;}
+.commitLink {text-decoration: none;}
+.commitLink:hover {background: none; color: black;}
+.commitTree {text-decoration: none; font-size: smaller;}
+
+
+.IssueURL {text-decoration: none;}
+.issueType {padding: 5px; border-radius: 5px; opacity: 0.9; font-weight: bolder; color: #ffffff;}
+.issueTypebug {background-color: #fc2929;}
+.issueTypeenhancement {background-color: #84b6eb;}
+.issuePos {display: inline-block; margin-right: 20px; text-align: center; vertical-align: top;}
+.issueStatus {float: right; display: inline-block;}
