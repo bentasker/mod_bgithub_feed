@@ -10,6 +10,11 @@
 defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 
+$user = $github->getUser($owner);
+
+if (!$user) { return ; }
+
+$userrepos = $github->getUsersRepos($owner);
 
 
 
@@ -29,9 +34,6 @@ JHtml::_('behavior.keepalive');
 <div class="CommitWrapper">
 <?php
 
-$user = $github->getUser($owner);
-$userrepos = $github->getUsersRepos($owner);
-
 $url = $user->html_url;
 $joined = date($params->get('JoinedDate'),strtotime($user->created_at));
 $company = $user->company;
@@ -41,7 +43,68 @@ $blog = $user->blog;
 
 
 
+?>
 
+<table class='GHubUserInfo'>
+  <tbody>
+  <tr>
+      <td colspan="3" class='GHubUser GHubCell'> <a href='<?php echo $url;?>' target=_blank><?php echo $owner;?></a> on GitHub</td>
+  </tr>
+
+  <tr>
+      <td class='GHubGrav GHubCell'><?php echo $gravatar; ?></td>
+      <td class='GHubJoined GHubCell'>    Joined
+	    <div class='GHubJoinedDate GHubContent'>
+		<?php echo $joined;?>
+	    </div>
+      </td>
+
+      <td class='GHubLocation GHubCell'> 
+      &nbsp;
+	
+
+	    <?php if (!empty($locat)):?>
+	    Location
+	    <div class='GHubLocationl GHubContent'>
+	      <?php echo $locat; ?>
+	    </div>
+	    <?php endif; ?>
+      </td>
+  </tr>
+  <tr>
+      <td>&nbsp;</td>
+      <td class='GHubCo GHubCell'> 
+	  &nbsp;
+
+	  <?php if (!empty($company)):?>
+	      Company
+		<div class='GHubCoNme GHubContent'>
+		    <?php echo $company; ?>
+		</div>
+	  <?php endif;?>
+      </td>
+      <td class='GHubBlog GHubCell'>
+	&nbsp;
+
+
+	<?php if (!empty($blog)):?>
+	Blog
+	<div class='GHubBlogNme GHubContent'>
+	  <a href='<?php echo $blog; ?>' target=_blank><?php echo $blog; ?></a>
+	</div>
+	<?php endif; ?>
+      </td>
+  </tr>
+
+   </tbody>
+
+</table>
+
+
+
+
+
+<?php
 
 
 

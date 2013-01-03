@@ -28,6 +28,29 @@
 .issueNo {color: grey; font-style: italic;}
 
 
+
+.GHubUserInfo {width: 100%; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%);}
+.GHubCell {vertical-align: middle; margin: 0px; padding: 5px;}
+
+.GHubUser {text-align: center;}
+.GHubUser a {text-decoration: none;}
+
+.GHubGrav {text-align: center; padding: 0px;}
+
+.GHubBlog {font-style: italic; font-size: x-small; text-align: center;}
+
+
+.GHubJoined {font-style: italic; font-size: x-small; text-align: center;}
+
+
+.GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
+
+
+.GHubCo {font-style: italic; font-size: x-small; text-align: center;}
+
+
+.GHubContent {font-size: small; text-align: center;}
+
 /*
 .mention {text-decoration: none;}
 .hashtag {text-decoration: none;}
