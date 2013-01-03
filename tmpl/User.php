@@ -48,7 +48,7 @@ $blog = $user->blog;
 <table class='GHubUserInfo'>
   <tbody>
   <tr>
-      <td colspan="3" class='GHubUser GHubCell'> <a href='<?php echo $url;?>' target=_blank><?php echo $owner;?></a> on GitHub</td>
+      <td colspan="3" class='GHubUser GHubCell'><h3><a href='<?php echo $url;?>' target=_blank><?php echo $owner;?></a> on GitHub</h3></td>
   </tr>
 
   <tr>

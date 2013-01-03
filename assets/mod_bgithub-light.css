@@ -30,39 +30,15 @@
 
 
 .GHubUserInfo {width: 100%; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%);}
-.GHubCell {vertical-align: middle; margin: 0px; padding: 5px;}
-
+.GHubCell {vertical-align: middle; margin: 0px; padding: 5px; text-shadow: -1px -1px 1px #fff;}
+.GHubCell a {text-shadow: 0px 0px 0px;}
+.GHubUserInfo tr {border-collapse: collapse; border: 0px;}
+.GHubUserInfo td {border-collapse: collapse; border: 0px;}
 .GHubUser {text-align: center;}
 .GHubUser a {text-decoration: none;}
-
 .GHubGrav {text-align: center; padding: 0px;}
-
 .GHubBlog {font-style: italic; font-size: x-small; text-align: center;}
-
-
 .GHubJoined {font-style: italic; font-size: x-small; text-align: center;}
-
-
 .GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
-
-
 .GHubCo {font-style: italic; font-size: x-small; text-align: center;}
-
-
 .GHubContent {font-size: small; text-align: center;}
-
-/*
-.mention {text-decoration: none;}
-.hashtag {text-decoration: none;}
-.tweeturl {text-decoration: none;}
-.tweetPic {height: 25px;}
-.Twitbuttonwrap {width: 180px; margin: auto !important; margin-top: 7px !important; position: relative; height: 25px; }
-.DirectTweetlink {text-decoration: none;}
-.twitterer {text-align: center;}
-.twitterer a {text-decoration: none; size: larger;}
-
-.tweetdate {font-style: italic; font-size: x-small;}
-
-.tweettext {display: inline;}
-#TwitButton {height:20px; position: absolute; left: 15%;}
-**/
