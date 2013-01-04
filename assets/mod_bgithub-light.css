@@ -1,4 +1,4 @@
-.modBGitHubWrap { border: none; padding: 10px; font-size: small;}
+.modBGitHubWrap { border: none; padding: 10px; font-size: small; }
 .CommitWrapper {border: 1px solid; border-radius: 5px; box-shadow: 3px 3px 4px #000000; padding: 5px;}
 .commit { list-style: none; padding: 10px;}
 .commit:hover { list-style: none; background: #d5d5d5; color: #ffffff; padding: 10px; border-radius: 5px;}
@@ -11,7 +11,7 @@
 .commitAuthor {text-decoration: none;}
 .CommitDate {font-style: italic; font-size: x-small;}
 .commitPos {display: inline-block; float: right; text-align: center;}
-.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; background-color: #F9F9F9; opacity: 0.9;}
+.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; background-color: #C7C7C7; opacity: 0.9;}
 .commitButton:hover { background-color: #FFFFE5; opacity: 1;}
 .commitLink {text-decoration: none;}
 .commitLink:hover {background: none; color: black;}
@@ -30,9 +30,8 @@
 .issueDets {display: inline-block; margin-top: 5px;}
 
 
-.GHubUserInfo {width: 100%; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%);}
-.GHubCell {vertical-align: middle; margin: 0px; padding: 5px; text-shadow: -1px -1px 1px #fff;}
-.GHubCell a {text-shadow: 0px 0px 0px;}
+.GHubUserInfo {width: 100%;}
+.GHubCell {vertical-align: middle; margin: 0px; padding: 5px;}
 .GHubUserInfo tr {border-collapse: collapse; border: 0px;}
 .GHubUserInfo td {border-collapse: collapse; border: 0px;}
 .GHubUser {text-align: center;}
@@ -47,7 +46,7 @@
 
 .UserRepos td {text-align: center; padding-top: 20px; padding-bottom: 20px;}
 .UserRepo td {padding-bottom: 10px; padding-top: 10px; vertical-align: middle;}
-.UserRepo:hover {background: #000; color: #ffffff;}
+.UserRepo:hover {background: #d5d5d5; color: #ffffff; border-radius: 5px;}
 .UserRepoNme {float: left; max-width: 80%;}
 .repoLang {float: right;}
 .UserRepoName a {text-decoration: none; }

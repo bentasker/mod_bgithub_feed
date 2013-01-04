@@ -44,7 +44,7 @@
 				      default="light"
 				      label="Style"
 				      description="Color Scheme to Use">
-				      
+				      <option value="chromed">Chromed</option>
 				      <option value="light">Light</option>
 				      <option value="dark">Dark</option>
 				      
