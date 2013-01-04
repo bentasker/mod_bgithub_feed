@@ -14,7 +14,7 @@ $user = $github->getUser($owner);
 
 if (!$user) { return ; }
 
-$userrepos = $github->getUsersRepos($owner);
+
 
 
 
@@ -48,7 +48,15 @@ $blog = $user->blog;
 <table class='GHubUserInfo'>
   <tbody>
   <tr>
-      <td colspan="3" class='GHubUser GHubCell'><h3><a href='<?php echo $url;?>' target=_blank><?php echo $owner;?></a> on GitHub</h3></td>
+      
+     
+
+      <td colspan="3" class='GHubUser GHubCell'>
+
+<div class='GHubLogo'></div>
+
+
+<h3><a href='<?php echo $url;?>' target=_blank><?php echo $owner;?></a> on GitHub</h3></td>
   </tr>
 
   <tr>
@@ -96,6 +104,52 @@ $blog = $user->blog;
       </td>
   </tr>
 
+
+  <?php if ($params->get('UserListRepos')): ?>
+  <tr class='UserRepos'>
+  <td colspan="3"><h3>User's Repositories</h3></td>
+  </tr>
+
+
+  <?php
+  $userrepos = $github->getUsersRepos($owner);
+
+  $X = 0;
+
+  foreach ($userrepos as $repo){
+      if ($X == $dispcount){ break; }
+
+  $reponame = $repo->name;
+  $url = $repo->html_url;
+  $desc = $repo->description;
+  $lang = $repo->language;
+  $lastupdate = date( $params->get('RepoDate'), strtotime($repo->updated_at));
+
+
+  ?>
+  <tr class='UserRepo' onclick='window.location.href = "<?php echo $url; ?>";'>
+    <td colspan="3">
+      <div class='UserRepoNme'>
+	  <span class='UserRepoName'><a href='<?php echo $url; ?>' target=_blank><?php echo $reponame; ?></a></span><br />
+	  <span class='UserRepoDesc'><?php echo $desc; ?></span><br />
+	  <span class='repoupdDate'>Last updated <?php echo $lastupdate;?></span> 
+      </div>
+
+      <div class='repoLang'>
+      <?php echo $lang; ?>
+      </div>
+      
+    </td>
+  </tr>
+
+  <?php
+
+
+  }
+
+
+ endif;?>
+
    </tbody>
 
 </table>
@@ -104,80 +158,5 @@ $blog = $user->blog;
 
 
 
-<?php
-
-
-
-
-$X = 0;
-
-foreach ($commits as $commit){
-
-if ($X == $dispcount){ break; }
-
-//print_r($commit);
-//echo "<br /><br />\n\n\n\n";
-
-$text = $commit->commit->message;
-
-$url = "https://github.com/$owner/$repo/commit/{$commit->sha}";
-$curl = "https://github.com/$owner/$repo/tree/{$commit->sha}";
-
-$author = $commit->committer->login;
-$authorurl = "https://github.com/$author";
-$cdate = date($dateformat,strtotime($commit->commit->committer->date));
-
-$gravatar = "<img class='bGitHubGravatar' src='{$commit->committer->avatar_url}'>";
-
-$cno = substr($commit->sha,0,10);
-
-
-?>
-<li class="commit" id="commit<?php echo $X;?>" 
->
-
-<div class="indCommitwrap">
-
-  <?php if ($displayimg):?>
-      <div class='commitGrav'><?php echo $gravatar; ?></div>
-  <?php endif; ?>
-
-  <div class="commitcontent">
-    <div class="committext" id="CommitText<?php echo $X;?>">
-      <?php echo $text; ?><br />
-	<?php if ($dispCommitter):?>
-	    <a class='commitAuthor' target=_blank href="<?php echo $authorurl;?>"><?php echo $author; ?></a>
-	<?php endif; ?>
-      - <span class='CommitDate'><?php echo $cdate; ?></span>
-    </div>
   </div>
-
-
-  <div class='commitPos'>
-
-      <div class='commitButton'>
-	<a href='<?php echo $url; ?>' target=_blank class='commitLink'><?php echo $cno;?></a>
-      </div>
-
-      <a class='commitTree' href='<?php echo $curl;?>' target=_blank>Browse Code</a>
-  </div>
-
-
-</div>
-</li>
-
-<?php
-$X++;
-}
-
-
-
-?>
-
-
-
-</div>
-
-
-
 </div>

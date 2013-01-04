@@ -197,7 +197,28 @@
 					label="Date Format"
 					description="The format to display signup dates in" />
 					
-		  
+					
+					    
+				    
+				    <field type="list"
+					  name="UserListRepos"
+					  default='0'
+					  label='List Repos'
+					    description='Include a list of the users repos (subject to the limit set above)'>
+					    
+					      <option value="0">No</option>
+					      <option value="1">Yes</option>
+					      
+					    </field>
+					
+					
+				<field
+					name="RepoDate"
+					type="text"
+					default="d M Y"
+					size="10"
+					label="Date Format"
+					description="The format to display Repo Update dates in" />
 				  
 				</fieldset>
 				

@@ -38,3 +38,19 @@
 .GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
 .GHubCo {font-style: italic; font-size: x-small; text-align: center;}
 .GHubContent {font-size: small; text-align: center;}
+
+
+
+.UserRepos td {text-align: center; padding-top: 20px; padding-bottom: 20px;}
+.UserRepo td {padding-bottom: 10px; padding-top: 10px; vertical-align: middle;}
+.UserRepo:hover {background: #fff; color: #000;}
+.UserRepoNme {float: left; max-width: 80%;}
+.repoLang {float: right;}
+.UserRepoName a {text-decoration: none; }
+.UserRepoName {font-size: larger; display: inline-block; padding-bottom: 15px;}
+.UserRepoDesc {font-size: x-small; }
+.repoupdDate {font-size: x-small; display: inline-block; margin-top: 10px; font-style: italic;}
+.GHubLogo {float: left; background-image: url('github_logo-dark.png'); background-repeat: no-repeat; width: 50px; height: 22px; display: inline-block; padding-top: 5px; background-position: center;}
+
+
+
