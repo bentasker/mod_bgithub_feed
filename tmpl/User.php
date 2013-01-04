@@ -113,10 +113,18 @@ $blog = $user->blog;
 
   <?php
   $userrepos = $github->getUsersRepos($owner);
+  $userrepofilter = $params->get('UserRepoFilter');
+  $filt = explode(",",$userrepofilter);
 
   $X = 0;
 
   foreach ($userrepos as $repo){
+
+      if ((!empty($userrepofilter)) && ((!in_array($repo->name,$filt)) || (in_array("!".$repo->name,$filt)))){
+      continue;
+      }
+
+
       if ($X == $dispcount){ break; }
 
   $reponame = $repo->name;

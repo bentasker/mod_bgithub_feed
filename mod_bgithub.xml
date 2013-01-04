@@ -210,6 +210,16 @@
 					      <option value="1">Yes</option>
 					      
 					    </field>
+					    
+					    
+					    	
+				<field
+					name="UserRepoFilter"
+					type="text"
+					default=""
+					size="10"
+					label="Repo Filter"
+					description="Enter a comma seperated list of Repository names if you wish to restrict which are displayed. Prefix with an exclamation to specifically exclude a repo." />
 					
 					
 				<field
