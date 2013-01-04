@@ -120,7 +120,7 @@ $blog = $user->blog;
 
   foreach ($userrepos as $repo){
 
-      if ((!empty($userrepofilter)) && ((!in_array($repo->name,$filt)) || (in_array("!".$repo->name,$filt)))){
+      if ((!empty($userrepofilter)) && ((in_array("!".$repo->name,$filt)))){
       continue;
       }
 
