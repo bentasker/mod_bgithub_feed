@@ -67,10 +67,13 @@ $cno = substr($commit->sha,0,10);
   <div class="commitcontent">
     <div class="committext" id="CommitText<?php echo $X;?>">
       <?php echo $text; ?><br />
-	<?php if ($dispCommitter):?>
-	    <a class='commitAuthor' target=_blank href="<?php echo $authorurl;?>"><?php echo $author; ?></a>
-	<?php endif; ?>
-      - <span class='CommitDate'><?php echo $cdate; ?></span>
+	  <div class='CommitDets'>
+	      <?php if ($dispCommitter):?>
+		  <a class='commitAuthor' target=_blank href="<?php echo $authorurl;?>"><?php echo $author; ?></a>
+	      <?php endif; ?>
+	     - <span class='CommitDate'><?php echo $cdate; ?></span>
+
+	  </div>
     </div>
   </div>
 

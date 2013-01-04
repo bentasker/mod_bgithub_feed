@@ -71,12 +71,13 @@ $gravatar = "<img class='bGitHubGravatar' src='{$issue->user->avatar_url}'>";
   <div class="commitcontent">
     <div class="committext" id="CommitText<?php echo $X;?>">
       <span class='issueNo'>#<?php echo $issueno;?></span> <a class='IssueURL' id='BGitHubIssueUrl<?php echo $X; ?>' title='<h3>Issue #<?php echo $issueno;?> - <?php echo $title;?></h3><?php echo $body; ?>' href='<?php echo $url; ?>'><?php echo $title; ?></a><br />
-	
+	<div class='issueDets'>
 	<?php if ($dispCommitter):?>
 	    by <a class='commitAuthor' target=_blank href="<?php echo $creatorurl;?>"><?php echo $creator; ?></a>
 	<?php endif; ?>
 
       <span class='CommitDate'><?php echo $created; ?></span>
+      </div>
     </div>
   </div>
 

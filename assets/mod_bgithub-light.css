@@ -6,7 +6,7 @@
 
 .commitGrav {display: inline-block; float: left; }
 .bGitHubGravatar {height: 40px; width: 40px;}
-.commitcontent {display: inline-block; padding-left: 5px;}
+.commitcontent {display: inline-block; padding-left: 5px; max-width: 60%;}
 .committext {display: inline-block;}
 .commitAuthor {text-decoration: none;}
 .CommitDate {font-style: italic; font-size: x-small;}
@@ -16,6 +16,7 @@
 .commitLink {text-decoration: none;}
 .commitLink:hover {background: none; color: black;}
 .commitTree {text-decoration: none; font-size: smaller;}
+.CommitDets {display: inline-block; margin-top: 5px;}
 
 
 
@@ -26,7 +27,7 @@
 .issuePos {display: inline-block; margin-right: 20px; text-align: center; vertical-align: top;}
 .issueStatus {float: right; display: inline-block;}
 .issueNo {color: grey; font-style: italic;}
-
+.issueDets {display: inline-block; margin-top: 5px;}
 
 
 .GHubUserInfo {width: 100%; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%);}
