@@ -15,18 +15,9 @@ JHtml::_('behavior.keepalive');
 
 ?>
 
-<div class="modBGitHubWrap<?php echo $suffix; ?>"
-
-<?php if ($params->get('DivSize') > 0): ?>
- style="width: <?php echo $params->get('DivSize');?>;"
-<?php endif;?>
-
->
-
-<?php //print_r($github->getIssues()); ?>
 
 
-<div class="CommitWrapper">
+
 <?php
 
 $commits = $github->getCommits();
@@ -101,8 +92,8 @@ $X++;
 
 
 
-</div>
 
 
 
-</div>
+
+

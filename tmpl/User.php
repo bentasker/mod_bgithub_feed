@@ -20,18 +20,8 @@ if (!$user) { return ; }
 
 ?>
 
-<div class="modBGitHubWrap<?php echo $suffix; ?>"
-
-<?php if ($params->get('DivSize') > 0): ?>
- style="width: <?php echo $params->get('DivSize');?>;"
-<?php endif;?>
-
->
-
-<?php //print_r($github->getIssues()); ?>
 
 
-<div class="CommitWrapper">
 <?php
 
 $url = $user->html_url;
@@ -166,5 +156,4 @@ $blog = $user->blog;
 
 
 
-  </div>
-</div>
+

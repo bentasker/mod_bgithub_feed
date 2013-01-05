@@ -33,4 +33,4 @@ $dispCommitter = $params->get('DispCommitter');
 $suffix = $params->get('ClssSuffix');
 
 
-require JModuleHelper::getLayoutPath('mod_bgithub', $params->get('layout', 'Commits'));
+require JModuleHelper::getLayoutPath('mod_bgithub', 'default');

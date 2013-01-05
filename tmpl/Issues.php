@@ -16,18 +16,9 @@ $dispCommitter = $params->get('DispCommitter');
 
 ?>
 
-<div class="modBGitHubWrap<?php echo $suffix; ?>"
-
-<?php if ($params->get('DivSize') > 0): ?>
- style="width: <?php echo $params->get('DivSize');?>;"
-<?php endif;?>
-
->
-
-<?php //print_r(); ?>
 
 
-<div class="CommitWrapper">
+
 <?php
 
 $issues = $github->getIssues($params->get('IssueStatus'),$params->get('IssueSort'),$params->get('IssueOrder'),$params->get('IssueLabels'));
@@ -110,8 +101,7 @@ $X++;
 
 
 
-</div>
 
 
 
-</div>
+
