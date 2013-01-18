@@ -86,10 +86,10 @@ $blog = $user->blog;
 
 
 	<?php if (!empty($blog)):?>
-	Blog
-	<div class='GHubBlogNme GHubContent'>
+	Blog<br />
+	<span class='GHubBlogNme GHubContent'>
 	  <a href='<?php echo $blog; ?>' target=_blank><?php echo $blog; ?></a>
-	</div>
+	</span>
 	<?php endif; ?>
       </td>
   </tr>
