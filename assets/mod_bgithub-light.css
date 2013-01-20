@@ -1,56 +1,9 @@
-.modBGitHubWrap { border: none; padding: 10px; font-size: small; }
-.CommitWrapper {border: 1px solid; border-radius: 5px; box-shadow: 3px 3px 4px #000000; padding: 5px;}
-.commit { list-style: none; padding: 10px;}
-.commit:hover { list-style: none; background: #d5d5d5; color: #ffffff; padding: 10px; border-radius: 5px;}
-.indCommitwrap {position: relative; margin-bottom: 5px;}
-
-.commitGrav {display: inline-block; float: left; }
-.bGitHubGravatar {height: 40px; width: 40px;}
-.commitcontent {display: inline-block; padding-left: 5px; max-width: 55%;}
-.committext {display: inline-block;}
-.commitAuthor {text-decoration: none;}
-.CommitDate {font-style: italic; font-size: x-small;}
-.commitPos {display: inline-block; float: right; text-align: center;}
-.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; background-color: #C7C7C7; opacity: 0.9;}
-.commitButton:hover { background-color: #FFFFE5; opacity: 1;}
-.commitLink {text-decoration: none;}
-.commitLink:hover {background: none; color: black;}
-.commitTree {text-decoration: none; font-size: smaller;}
-.CommitDets {display: inline-block; margin-top: 5px;}
-
-
-
-.IssueURL {text-decoration: none;}
-.issueType {padding: 5px; border-radius: 5px; opacity: 0.9; font-weight: bolder;}
-.issueTypebug {background-color: #fc2929;}
-.issueTypeenhancement {background-color: #84b6eb;}
-.issuePos {display: inline-block; margin-right: 20px; text-align: center; vertical-align: top;}
-.issueStatus {float: right; display: inline-block;}
-.issueNo {color: grey; font-style: italic;}
-.issueDets {display: inline-block; margin-top: 5px;}
-
-
-.GHubUserInfo {width: 100%;}
-.GHubCell {vertical-align: middle; margin: 0px; padding: 5px;}
-.GHubUserInfo tr {border-collapse: collapse; border: 0px;}
-.GHubUserInfo td {border-collapse: collapse; border: 0px;}
-.GHubUser {text-align: center;}
-.GHubUser a {text-decoration: none;}
-.GHubGrav {text-align: center; padding: 0px;}
-.GHubBlog {font-style: italic; font-size: x-small; text-align: center;}
-.GHubJoined {font-style: italic; font-size: x-small; text-align: center;}
-.GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
-.GHubCo {font-style: italic; font-size: x-small; text-align: center;}
-.GHubContent {font-size: small; text-align: center;}
-
-
-.UserRepos td {text-align: center; padding-top: 20px; padding-bottom: 20px;}
-.UserRepo td {padding-bottom: 10px; padding-top: 10px; vertical-align: middle;}
+.CommitWrapper {box-shadow: 3px 3px 4px #000000;}
+.commit:hover {background: #d5d5d5; color: #ffffff;}
+.commitButton {background-color: #C7C7C7;}
+.commitButton:hover { background-color: #FFFFE5;}
+.issueNo {color: grey;}
 .UserRepo:hover {background: #d5d5d5; color: #ffffff; border-radius: 5px;}
-.UserRepoNme {float: left; max-width: 80%;}
-.repoLang {float: right;}
-.UserRepoName a {text-decoration: none; }
-.UserRepoName {font-size: larger; display: inline-block; padding-bottom: 15px;}
-.UserRepoDesc {font-size: x-small; }
-.repoupdDate {font-size: x-small; display: inline-block; margin-top: 10px; font-style: italic;}
-.GHubLogo {float: left; background-image: url('github_logo-light.png'); background-repeat: no-repeat; width: 50px; height: 22px; display: inline-block; padding-top: 5px; background-position: center;}
+.GHubLogo {background-image: url('github_logo-light.png');}
+.BGHubTabswitch li:hover {background-color: #000; color: #fff;}
+li.BGHubActitab{color: #fff; background-color: #000}

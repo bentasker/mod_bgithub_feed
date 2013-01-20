@@ -4,14 +4,14 @@
 	version="2.5"
 	client="site"
 	method="upgrade">
-	<name>BGitHub</name>
+	<name>BGitHub Feed</name>
 	<author>Ben Tasker</author>
 	<creationDate>January 2013</creationDate>
 	<license>GNU General Public License version 2</license>
 	<authorEmail>BGithub@bentasker.co.uk</authorEmail>
 	<authorUrl>bentasker.co.uk</authorUrl>
 	<version>1.0</version>
-	<description>A simple module to GitHub activity for a given repo</description>
+	<description>A simple module to display GitHub activity for a given repo or a basic profile for a given user</description>
 	
 	<files>
 		<filename module="mod_bgithub">mod_bgithub.php</filename>
@@ -104,6 +104,20 @@
 					size="10"
 					label="# Records"
 					description="Number of Entries to Display for commits/issues" />
+					
+					
+					
+					
+						<field type="list"
+				      name="DispPoweredBy"
+				      default="1"
+				      label="Display Powered By"
+				      description="Display the powered by notice (includes a link)">
+				      <option value="1">Yes</option>
+				      <option value="0">No</option>
+				      
+				      
+				    </field>
 				
 			      </fieldset>
 			      

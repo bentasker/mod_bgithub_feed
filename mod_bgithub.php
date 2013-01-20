@@ -21,6 +21,7 @@ $github->setparams($params);
 
 
 $document =& JFactory::getDocument();
+$document->addStyleSheet("modules/mod_bgithub/assets/mod_bgithub.css");
 $document->addStyleSheet("modules/mod_bgithub/assets/mod_bgithub-". $params->get('Style') .".css");
 
 

@@ -31,8 +31,6 @@ foreach ($issues as $issue){
 
 if ($X == $dispcount){ break; }
 
-//print_r($commit);
-//echo "<br /><br />\n\n\n\n";
 
 $title = str_replace("'","&apos;",htmlspecialchars($issue->title));
 

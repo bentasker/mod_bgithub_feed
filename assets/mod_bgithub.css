@@ -1,0 +1,80 @@
+
+.BGHubPoweredBy {margin: auto; width: 50%; font-size: x-small; font-style: italic; margin-top: 20px;}
+.BGHubPoweredBy a {text-decoration: none;}
+
+.GHubLogo {float: left; background-repeat: no-repeat; width: 50px; height: 22px; display: inline-block; padding-top: 5px; background-position: center;}
+li.BGHubActitab {opacity: 1; font-weight: bold; border-radius: 5px;}
+.BGHubTabSwitcher {margin: auto; margin-bottom: 30px; width: 80%}
+
+/* I loathe having to use !important, but Beez overrides the values if you want the module in the content area - correct behaviour but still irritating */
+.BGHubTabswitch {list-style: none; list-style-type: none !important; margin: 0 !important; padding: 0 !important; margin: auto !important; position: relative;  width: 70%;}
+.BGHubTabswitch li {float: left; padding: 5px !important; opacity: 0.6; font-size: x-small; border-radius: 5px;}
+.BGHubTabswitch li:hover { border-radius: 5px; text-shadow: 0px 0px 0px;}
+.BGHubTabContent {margin: -5px;}
+
+.GHubUserInfo {width: 100%;} 
+.GHubCell {vertical-align: middle; margin: 0px; padding: 5px;}
+.GHubCell a {text-shadow: 0px 0px 0px;}
+
+.GHubUserInfo tr {border-collapse: collapse; border: 0px;}
+.GHubUserInfo td {border-collapse: collapse; border: 0px;}
+.GHubUser {text-align: center;}
+.GHubUser a {text-decoration: none;}
+.GHubGrav {text-align: center; padding: 0px;}
+.GHubBlog {font-style: italic; font-size: x-small; text-align: center;}
+.GHubJoined {font-style: italic; font-size: x-small; text-align: center;}
+.GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
+.GHubCo {font-style: italic; font-size: x-small; text-align: center;}
+.GHubContent {font-size: small; text-align: center;}
+.GHubBlogNme {word-wrap: break-word;}
+
+.UserRepos td {text-align: center; padding-top: 20px; padding-bottom: 20px;}
+.UserRepo td {padding-bottom: 10px; padding-top: 10px; vertical-align: middle;}
+
+
+.UserRepoNme {float: left; max-width: 80%; padding-left: 5px;}
+.repoLang {float: right; padding-right: 5px;}
+.UserRepoName a {text-decoration: none; }
+.UserRepoName {font-size: larger; display: inline-block; padding-bottom: 15px;}
+.UserRepoDesc {font-size: x-small; }
+.repoupdDate {font-size: x-small; display: inline-block; margin-top: 10px; font-style: italic;}
+.issuePos {display: inline-block; margin-right: 20px; text-align: center; vertical-align: top;}
+.issueStatus {float: right; display: inline-block;}
+.issueNo {font-style: italic;}
+.issueDets {display: inline-block; margin-top: 5px;}
+.issueTypebug {background-color: #fc2929;}
+.issueTypeenhancement {background-color: #84b6eb;}
+.IssueURL {text-decoration: none;}
+.issueType {padding: 5px; border-radius: 5px; opacity: 0.9; font-weight: bolder;}
+.commitLink {text-decoration: none;}
+.commitLink:hover {background: none; color: black;}
+.commitTree {text-decoration: none; font-size: smaller;}
+.CommitDets {display: inline-block; margin-top: 5px;}
+.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; opacity: 0.9;}
+.commitButton:hover {opacity: 1;}
+.commitGrav {display: inline-block; float: left; }
+.bGitHubGravatar {height: 20px; width: 20px;}
+.commitcontent {display: inline-block; padding-left: 5px; max-width: 55%;}
+.committext {display: inline-block;}
+.commitAuthor {text-decoration: none;}
+.CommitDate {font-style: italic; font-size: x-small;}
+.commitPos {display: inline-block; float: right; text-align: center; font-size: x-small;}
+.indCommitwrap {position: relative; margin-bottom: 5px;}
+.commit:hover { list-style: none; padding: 10px; border-radius: 5px;}
+.commit { list-style: none; padding: 10px;}
+.CommitWrapper {width: 100%; border: 1px solid; border-radius: 5px; padding: 10px; display: table;}
+.modBGitHubWrap { border: none; font-size: small; }
+
+
+@media screen and (max-device-width: 1000px){
+  
+  div.commitGrav {display: none;}
+  .commitPos {font-size: x-small};
+  .issueType {display: none;}
+  .bGitHubGravatar {display: none;}
+  .
+  
+  
+  
+  
+}

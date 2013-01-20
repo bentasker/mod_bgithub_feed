@@ -24,7 +24,7 @@ function switchtabs(active,cls,btnClass){
       }
     
     document.getElementById(active+'Tab').style.display = 'block';
-    document.getElementById(active+'But').className = 'BGHubTabSwitch BGHubActitab';
+    document.getElementById(active+'But').className = 'BGHubActitab BGHubTabSwitch';
     
  
 }

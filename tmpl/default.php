@@ -55,6 +55,9 @@ $document->addScript("modules/mod_bgithub/assets/mod_bgithub.js");
 // Layout switch ends
 ?>
 
+<?php if ($params->get('DispPoweredBy')):?>
+    <div class="BGHubPoweredBy">Powered by <a href="http://www.bentasker.co.uk/shop/joomla-extensions/mod-bgithub-feed-detail" target=_blank>BGitHub Feed</a></div>
+<?php endif; ?>
 
   </div>
 </div>

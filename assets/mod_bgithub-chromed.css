@@ -1,85 +1,15 @@
-.modBGitHubWrap { border: none; font-size: small; }
-.CommitWrapper {border: 1px solid; border-radius: 5px; box-shadow: 3px 3px 4px #000000; padding: 10px; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%); display: table;}
-.commit { list-style: none; padding: 10px;}
-.commit:hover { list-style: none; background: #000; color: #ffffff; padding: 10px; border-radius: 5px;}
-.indCommitwrap {position: relative; margin-bottom: 5px;}
-
-.commitGrav {display: inline-block; float: left; }
-.bGitHubGravatar {height: 20px; width: 20px;}
-.commitcontent {display: inline-block; padding-left: 5px; max-width: 55%;}
-.committext {display: inline-block;}
-.commitAuthor {text-decoration: none;}
-.CommitDate {font-style: italic; font-size: x-small;}
-.commitPos {display: inline-block; float: right; text-align: center; font-size: x-small;}
-.commitButton {font-weight: bolder; vertical-align: middle; padding: 5px; border-radius: 5px; background-color: #C7C7C7; opacity: 0.9;}
-.commitButton:hover { background-color: #FFFFE5; opacity: 1;}
-.commitLink {text-decoration: none;}
-.commitLink:hover {background: none; color: black;}
-.commitTree {text-decoration: none; font-size: smaller;}
-.CommitDets {display: inline-block; margin-top: 5px;}
-
-
-
-.IssueURL {text-decoration: none;}
-.issueType {padding: 5px; border-radius: 5px; opacity: 0.9; font-weight: bolder;}
-.issueTypebug {background-color: #fc2929;}
-.issueTypeenhancement {background-color: #84b6eb;}
-.issuePos {display: inline-block; margin-right: 20px; text-align: center; vertical-align: top;}
-.issueStatus {float: right; display: inline-block;}
-.issueNo {color: grey; font-style: italic;}
-.issueDets {display: inline-block; margin-top: 5px;}
-
-
-.GHubUserInfo {table-layout: fixed; width: 100%;} 
-.GHubCell {vertical-align: middle; margin: 0px; padding: 5px; text-shadow: -1px -1px 1px #fff;}
-.GHubCell a {text-shadow: 0px 0px 0px;}
-.GHubUserInfo tr {border-collapse: collapse; border: 0px;}
-.GHubUserInfo td {border-collapse: collapse; border: 0px;}
-.GHubUser {text-align: center;}
-.GHubUser a {text-decoration: none;}
-.GHubGrav {text-align: center; padding: 0px;}
-.GHubBlog {font-style: italic; font-size: x-small; text-align: center;}
-.GHubJoined {font-style: italic; font-size: x-small; text-align: center;}
-.GHubLocation {font-style: italic; font-size: x-small; text-align: center;}
-.GHubCo {font-style: italic; font-size: x-small; text-align: center;}
-.GHubContent {font-size: small; text-align: center;}
-.GHubBlogNme {word-wrap: break-word;}
-
-.UserRepos td {text-align: center; padding-top: 20px; padding-bottom: 20px;}
-.UserRepo td {padding-bottom: 10px; padding-top: 10px; vertical-align: middle;}
+.CommitWrapper {box-shadow: 3px 3px 4px #000000; background-image: -ms-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -moz-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -o-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(1, #BABABA)); background-image: -webkit-linear-gradient(top, #F8F8F8 0%, #BABABA 100%); background-image: linear-gradient(to bottom, #F8F8F8 0%, #BABABA 100%);}
+.commit:hover { background: #000; color: #ffffff;}
+.commitButton { background-color: #C7C7C7;}
+.commitButton:hover { background-color: #FFFFE5;}
+.issueNo {color: grey;}
+.GHubCell {text-shadow: -1px -1px 1px #fff;}
 .UserRepo:hover {background: #000; color: #ffffff; border-radius: 5px;}
-.UserRepoNme {float: left; max-width: 80%; padding-left: 5px;}
-.repoLang {float: right; padding-right: 5px;}
-.UserRepoName a {text-decoration: none; }
-.UserRepoName {font-size: larger; display: inline-block; padding-bottom: 15px;}
-.UserRepoDesc {font-size: x-small; }
-.repoupdDate {font-size: x-small; display: inline-block; margin-top: 10px; font-style: italic;}
-.GHubLogo {float: left; background-image: url('github_logo-light.png'); background-repeat: no-repeat; width: 50px; height: 22px; display: inline-block; padding-top: 5px; background-position: center;}
+.GHubLogo {background-image: url('github_logo-light.png');}
+.BGHubTabswitch li:hover {background-color: #000; color: #fff;}
 
 
 
 
-.BGHubTabSwitcher {margin-bottom: 20px;}
-.BGHubTabswitch {list-style: none; margin: 0; padding: 0; margin: auto !important; position: relative;  width: 70%;}
-.BGHubTabswitch li {float: left; padding-left: 5px; padding-right: 5px; opacity: 0.6; font-size: x-small;}
-.BGHubTabswitch li:hover {background-color: #000; color: #fff; border-radius: 5px; text-shadow: 0px 0px 0px;}
-li.BGHubActitab {opacity: 1; font-weight: bold; text-shadow: -1px -1px 1px #fff;}
-.BGHubTabContent {margin: -5px;}
-
-
-
-
-@media screen and (max-device-width: 1000px){
-  
-  div.commitGrav {display: none;}
-  .commitPos {font-size: x-small};
-  .issueType {display: none;}
-  .bGitHubGravatar {display: none;}
-  .
-  
-  
-  
-  
-}
 
 
