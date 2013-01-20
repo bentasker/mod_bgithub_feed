@@ -94,12 +94,22 @@ $cachetime = $this->params->get('shortcache');
 if ($this->params->get('CachingEnabled')){
 // Get the config object from factory
         $conf =& JFactory::getConfig();
-        // Get the current cachetime value
+
+        // Get the current cachetime value - If statement exists because function name differs in J3
+	if (method_exists($conf,'getValue')){
         $oldcachetime = $conf->getValue('config.cachetime');
+	$setfn="setValue";
+	}else{
+	$oldcachetime = $conf->get('config.cachetime');
+	$setfn="set";
+	}
+
+    
+
         
 	
 	// Set the cache time to 30 mins 
-        $conf->setValue('config.cachetime', $cachetime);
+        $conf->$setfn('config.cachetime', $cachetime);
 	
 
 
@@ -126,7 +136,7 @@ if ($this->params->get('CachingEnabled')){
 
 
 // Reset the cachetime
-$conf->setValue('config.cachetime', $oldcachetime);
+$conf->$setfn('config.cachetime', $oldcachetime);
 
 return $json;
 
