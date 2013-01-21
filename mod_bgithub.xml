@@ -30,7 +30,7 @@
 			  
 				  <field name='layout'
 					type='modulelayout'
-					default='Commit'
+					default='default'
 					size='10'
 					label='Module Mode'
 					  />
