@@ -158,12 +158,13 @@ function place_request($uri){
 unset($this->result);
 
 // Check whether we can use File or if we need to resort to Curl
-if (ini_get('allow_url_fopen')){
-$results = implode("",$this->placefilerequest($uri));
-}else{
+// Deprecated - GitHub's API changes mean we need to send a user-agent otherwise we'll receive a 403
+//if (ini_get('allow_url_fopen')){
+//$results = implode("",$this->placefilerequest($uri));
+//}else{
 $results = $this->placecurlrequest($uri);
 
-}
+//}
 
 
 
