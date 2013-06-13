@@ -193,7 +193,7 @@ return $results;
 function placecurlrequest($uri){
  $ch = curl_init("$uri");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
- 
+    curl_setopt($ch,CURLOPT_USERAGENT,'mod_BGitHub Feed Joomla Extension');
     $data = curl_exec($ch);
  
     curl_close($ch);
