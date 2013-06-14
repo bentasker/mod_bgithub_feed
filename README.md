@@ -9,3 +9,6 @@ However, it supports a number of other functions including
 - Displaying a basic user profile
 
 The module includes a number of built in styles, ranging from a basic light or dark template to a chromed implementation.
+
+
+A basic demo of the module can be seen at http://demo.bentasker.co.uk/bgithub-feed/default-settings
