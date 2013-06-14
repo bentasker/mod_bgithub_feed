@@ -12,3 +12,16 @@ The module includes a number of built in styles, ranging from a basic light or d
 
 
 A basic demo of the module can be seen at http://demo.bentasker.co.uk/bgithub-feed/default-settings
+
+
+Documentation
+--------------
+
+Basic Documentation is available at http://www.bentasker.co.uk/documentation/joomla/171-bgithub-feed
+
+
+
+Support
+--------
+
+This version of BGithub Feed is entirely unsupported, for a version including support please visit http://www.bentasker.co.uk/shop/joomla-extensions/mod-bgithub-feed-detail
